@@ -19,10 +19,22 @@ pip install -r requirements.txt
 
 
 ### 音声・動画の準備
-- `tmp/audios/`を用意し、`audio_0.mp3`のような形で`audio_`に出力させたい順に末尾に数値をつけて格納する
-  - 一つ目の`audio_0.mp3`は、後述の`input.mp4`よりも短い音声にする
-- `tmp/videos/`を用意し、結合したい動画を`input.mp4`という名前で格納する
+- `tmp/` に合成に必要な動画音声を以下のような構成で準備する
+  - 一つ目の音声 `audio_0.mp3` は、`input.mp4` よりも短い音声にする
 
+```bash
+$ tree tmp/
+
+tmp/
+├── audios
+│   ├── audio_0.mp3
+│   ├── audio_1.mp3
+│   ├── audio_2.mp3
+│   ├── audio_3.mp3
+│   └── audio_4.mp3
+└── videos
+    └── input.mp4
+```
 
 ## 実行
 
